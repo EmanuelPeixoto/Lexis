@@ -7,13 +7,11 @@
     hlsearch = true;
     ignorecase = true;
     inccommand = "split";
-    list = true;
     mouse = "a";
     number = true;
     relativenumber = true;
     scrolloff = 10;
     shiftwidth = 2;
-    showmode = false;
     signcolumn = "yes";
     smartcase = true;
     softtabstop = 2;
