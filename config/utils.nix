@@ -10,18 +10,18 @@
 
     comment.enable = true;
     wakatime.enable = true;
+    which-key.enable = true;
   };
 
   keymaps = [
-      {
-        mode = "n";
-        key = "<leader>ut";
-        action = "<cmd>UndotreeToggle<CR>";
-        options = {
-          silent = true;
-          desc = "Undotree";
-        };
-      }
-    ];
-
+    {
+      mode = "n";
+      key = "<leader>ut";
+      action = "<cmd>UndotreeToggle<CR>";
+      options = {
+        silent = true;
+        desc = "Undotree";
+      };
+    }
+  ];
 }
