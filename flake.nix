@@ -1,5 +1,5 @@
 {
-  description = "A nixvim configuration";
+  description = "Here is Lexis, who knows all the words of all languages, almost with a life of his own, helps to decipher and sculpt the darkest languages";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
