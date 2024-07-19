@@ -7,6 +7,12 @@
     hlsearch = true;
     ignorecase = true;
     inccommand = "split";
+    list = true;
+    listchars = {
+      tab = "» ";
+      trail = "·";
+      nbsp = "␣";
+    }; 
     mouse = "a";
     number = true;
     relativenumber = true;

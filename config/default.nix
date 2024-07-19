@@ -1,8 +1,10 @@
 {
   imports = [
+    ./extraPackages.nix
     ./extraPlugins.nix
     ./lsp.nix
     ./native.nix
+    ./telescope.nix
     ./ui.nix
     ./utils.nix
   ];
