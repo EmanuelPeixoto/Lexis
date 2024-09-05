@@ -1,16 +1,15 @@
 {
   imports = [
     ./extraPackages.nix
-    ./extraPlugins.nix
-    ./lsp.nix
     ./native.nix
-    ./telescope.nix
-    ./ui.nix
-    ./utils.nix
+    ./plugins/default.nix
   ];
+
   globals = {
     mapleader = " ";
     maplocalleader = " ";
     have_nerd_font = true;
   };
+
+  colorschemes.gruvbox.enable = true;
 }
