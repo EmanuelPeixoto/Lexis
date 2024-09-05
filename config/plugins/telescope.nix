@@ -15,6 +15,6 @@
         options.desc = "Telescope Git Files";
       };
     };
-    extensions.fzf-native = { enable = true; };
+    extensions.fzf-native.enable = true;
   };
 }
