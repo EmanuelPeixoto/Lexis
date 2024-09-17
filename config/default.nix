@@ -1,5 +1,6 @@
 {
   imports = [
+    ./autocmd.nix
     ./extraPackages.nix
     ./native.nix
     ./plugins/default.nix
