@@ -1,6 +1,6 @@
 {
   plugins.gitsigns = {
-    enable = false;
+    enable = true;
     settings = {
       current_line_blame = true;
       trouble = true;
@@ -12,5 +12,10 @@
         changedelete = { text = "~"; };
       };
     };
+  };
+
+
+    plugins.diffview = {
+    enable = true;
   };
 }

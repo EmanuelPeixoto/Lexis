@@ -2,8 +2,11 @@
   imports = [
     ./autocmd.nix
     ./extraPackages.nix
-    ./native.nix
-    ./plugins/default.nix
+    ./extraPlugins.nix
+    ./lsp/imports.nix
+    ./native/imports.nix
+    ./ui/imports.nix
+    ./utils/imports.nix
   ];
 
   globals = {
@@ -12,5 +15,5 @@
     have_nerd_font = true;
   };
 
-  colorschemes.gruvbox.enable = true;
+  colorschemes.melange.enable = true;
 }
