@@ -12,7 +12,7 @@
       tab = "» ";
       trail = "·";
       nbsp = "␣";
-    }; 
+    };
     mouse = "a";
     number = true;
     relativenumber = true;
