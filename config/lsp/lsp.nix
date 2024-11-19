@@ -13,7 +13,7 @@
       jsonls.enable = true;                 # JSON
       nixd.enable = true;                   # Nix
       texlab.enable = true;                 # TeX
-      ts-ls.enable = true;                  # TypeScript
+      ts_ls.enable = true;                  # TypeScript
     };
   };
 
