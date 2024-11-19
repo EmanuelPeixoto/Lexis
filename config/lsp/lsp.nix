@@ -5,14 +5,15 @@
     servers = {
       bashls.enable = true;                 # Bash
       clangd.enable = true;                 # C
-      gopls.enable = true;                  # Go
-      java_language_server.enable = true;   # Java
-      nixd.enable = true;                   # Nix
-      texlab.enable = true;                 # TeX
-      html.enable = true;                   # HTML
-      jsonls.enable = true;                 # JSON
       cssls.enable = true;                  # CSS
       emmet_ls.enable = true;               # HTML/CSS/SCSS/JS
+      gopls.enable = true;                  # Go
+      html.enable = true;                   # HTML
+      java_language_server.enable = true;   # Java
+      jsonls.enable = true;                 # JSON
+      nixd.enable = true;                   # Nix
+      texlab.enable = true;                 # TeX
+      ts-ls.enable = true;                  # TypeScript
     };
   };
 
