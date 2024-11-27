@@ -9,7 +9,7 @@
       emmet_ls.enable = true;               # HTML/CSS/SCSS/JS
       gopls.enable = true;                  # Go
       html.enable = true;                   # HTML
-      java_language_server.enable = true;   # Java
+      # java_language_server.enable = true;   # Java
       jsonls.enable = true;                 # JSON
       nixd.enable = true;                   # Nix
       texlab.enable = true;                 # TeX
