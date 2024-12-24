@@ -6,7 +6,7 @@
     ./telescope.nix
     ./todo.nix
     ./undotree.nix
-    # ./vimtex.nix
+    ./vimtex.nix
     ./wilder.nix
   ];
 }
