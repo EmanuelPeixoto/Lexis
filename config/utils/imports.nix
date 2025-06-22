@@ -1,6 +1,7 @@
 {
   imports = [
     ./auto-pairs.nix
+    ./codesnap.nix
     ./gitsigns.nix
     ./indent-blankline.nix
     ./telescope.nix
