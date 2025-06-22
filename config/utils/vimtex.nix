@@ -45,19 +45,6 @@
         command = ''set filetype=tex "| VimtexTocOpen'';
       }
 
-      # Folding
-      {
-        event = "FileType";
-        pattern = [ "tex" "latex" ];
-        callback.__raw = ''
-          function ()
-            vim.o.foldmethod = 'expr'
-            vim.o.foldexpr = 'vimtex#fold#level(v:lnum)'
-            vim.o.foldtext = 'vimtex#fold#text()'
-          end
-        '';
-      }
-
       # Compile on initialization
       {
         event = "User";
