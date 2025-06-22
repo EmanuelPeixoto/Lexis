@@ -13,9 +13,4 @@
       };
     };
   };
-
-
-    plugins.diffview = {
-    enable = true;
-  };
 }

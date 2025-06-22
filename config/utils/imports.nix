@@ -2,6 +2,7 @@
   imports = [
     ./auto-pairs.nix
     ./codesnap.nix
+    ./diffview.nix
     ./gitsigns.nix
     ./indent-blankline.nix
     ./telescope.nix
