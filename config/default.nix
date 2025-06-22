@@ -15,5 +15,5 @@
     have_nerd_font = true;
   };
 
-  colorschemes.melange.enable = true;
+  colorschemes.oxocarbon.enable = true;
 }
