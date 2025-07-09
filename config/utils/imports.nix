@@ -5,6 +5,7 @@
     ./diffview.nix
     ./gitsigns.nix
     ./indent-blankline.nix
+    ./render-markdown.nix
     ./telescope.nix
     ./todo.nix
     ./undotree.nix
