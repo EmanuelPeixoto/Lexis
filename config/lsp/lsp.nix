@@ -9,9 +9,13 @@
       emmet_ls.enable = true;               # HTML/CSS/SCSS/JS
       gopls.enable = true;                  # Go
       html.enable = true;                   # HTML
-      # java_language_server.enable = true;   # Java
       jsonls.enable = true;                 # JSON
       nixd.enable = true;                   # Nix
+      rust_analyzer = {                     # Rust
+        enable = true;
+        installRustc = true;
+        installCargo = true;
+      };
       texlab.enable = true;                 # TeX
       ts_ls.enable = true;                  # TypeScript
     };
