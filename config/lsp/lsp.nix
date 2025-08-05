@@ -19,6 +19,13 @@
       texlab.enable = true;                 # TeX
       ts_ls.enable = true;                  # TypeScript
     };
+    keymaps.lspBuf = {
+      "gd" = "definition";
+      "gD" = "references";
+      "gt" = "type_definition";
+      "gi" = "implementation";
+      "K" = "hover";
+    };
   };
 
   filetype.extension.gohtml = "html";
