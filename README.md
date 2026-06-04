@@ -2,7 +2,7 @@
 
 > *"Here is Lexis, who knows all the words of all languages, almost with a life of his own, helps to decipher and sculpt the darkest languages."*
 
-A modular [NixVim](https://github.com/nix-community/nixvim) configuration — import what you need, leave the rest.
+A modular [NixVim](https://github.com/nix-community/nixvim) configuration - import what you need, leave the rest.
 
 ## Features
 
@@ -10,7 +10,7 @@ A modular [NixVim](https://github.com/nix-community/nixvim) configuration — im
 |----------|---------|
 | **LSP** | bashls, clangd, cssls, emmet_ls, gopls, html, jsonls, nixd, rust_analyzer, texlab, ts_ls |
 | **Completion** | nvim-cmp + LuaSnip (buffer, path, nvim_lsp sources) |
-| **Formatting/Linting** | none-ls (gofmt, goimports, nixfmt, statix, golangci_lint, shellharden, shfmt, markdownlint) |
+| **Formatting/Linting** | conform.nvim + nvim-lint (gofmt, goimports, nixfmt, statix, golangcilint, shellcheck, shellharden, shfmt, markdownlint, yamllint, hadolint) |
 | **Debugging** | nvim-dap, dap-ui, dap-virtual-text, dap-go |
 | **Fuzzy Finder** | Telescope (fzf-native) |
 | **Git** | Gitsigns, Diffview |
@@ -38,6 +38,7 @@ A modular [NixVim](https://github.com/nix-community/nixvim) configuration — im
 | `K` | Hover |
 | `<leader>ca` | Code action |
 | `<leader>rn` | Rename |
+| `<leader>cf` | Format code |
 | `[d` / `]d` | Prev/next diagnostic |
 | `[c` / `]c` | Prev/next git hunk |
 | `<leader>hs` | Stage hunk |
@@ -157,7 +158,7 @@ Add `nixvim` as an input, import the Lexis base config, and enable only the LSP 
 }
 ```
 
-### Granular control — import modules individually
+### Granular control - import modules individually
 
 For maximum control, import only the specific config files you want:
 
@@ -180,12 +181,12 @@ For maximum control, import only the specific config files you want:
           # Utils
           (lexis + "/config/utils/imports.nix")    # telescope, gitsigns, flash, etc.
 
-          # LSP — completion and diagnostics
+          # LSP - completion and diagnostics
           (lexis + "/config/lsp/cmp.nix")          # autocomplete
           (lexis + "/config/lsp/trouble.nix")      # diagnostic list
-          (lexis + "/config/lsp/none-ls.nix")      # formatting & linting
+          (lexis + "/config/lsp/conform.nix")      # formatting & linting
 
-          # LSP — pick only the servers you need:
+          # LSP - pick only the servers you need:
           (lexis + "/config/lsp/servers/nix.nix")
           (lexis + "/config/lsp/servers/go.nix")
           (lexis + "/config/lsp/servers/rust.nix")
@@ -227,14 +228,3 @@ git clone https://github.com/EmanuelPeixoto/Lexis
 cd Lexis
 nix run .
 ```
-
-## Roadmap
-
-- [x] **DAP** — Debug Adapter Protocol with dap-go (~#2)
-- [x] **nvim-ufo** — Treesitter + LSP folding (~#4)
-- [x] **Lualine** — Statusline with branch, diff, diagnostics, LSP status (~#5)
-- [x] **Fidget.nvim** — LSP progress spinner (~#7)
-- [x] **nvim-colorizer** — Inline color highlighting (~#12)
-- [x] **Grug-far** — Search & replace with preview (~#15)
-- [ ] **Migrate `none-ls` to `conform.nvim` + `nvim-lint`**  
-  `none-ls` is archived upstream. Replace with async formatting and linting once nixvim modules are available.
