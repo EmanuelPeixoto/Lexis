@@ -42,7 +42,7 @@
       {
         event = [ "BufEnter" "BufWinEnter" ];
         pattern = "*.tex";
-        command = ''set filetype=tex "| VimtexTocOpen'';
+        command = "set filetype=tex | VimtexTocOpen";
       }
 
       # Compile on initialization

@@ -2,8 +2,11 @@
   keymaps = [
     {
       mode = "n";
-      key = "<Esc>";
-      options.silent = true;
+      key = "<leader>nh";
+      options = {
+        silent = true;
+        desc = "Clear search highlights";
+      };
       action = "<cmd>nohlsearch<CR>";
     }
   ];

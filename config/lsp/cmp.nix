@@ -1,3 +1,4 @@
+{ lib, ... }:
 {
   plugins = {
     luasnip.enable = true;
@@ -14,9 +15,9 @@
         ];
 
         mapping = {
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
-          "<S-Tab>" = "cmp.mapping.select_prev_item()";
-          "<Tab>" = "cmp.mapping.select_next_item()";
+          "<CR>" = lib.nixvim.mkRaw "cmp.mapping.confirm({ select = true })";
+          "<S-Tab>" = lib.nixvim.mkRaw "cmp.mapping.select_prev_item()";
+          "<Tab>" = lib.nixvim.mkRaw "cmp.mapping.select_next_item()";
         };
 
         snippet.expand = "luasnip";

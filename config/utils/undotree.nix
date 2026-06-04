@@ -1,15 +1,10 @@
 {
-  plugins = {
-    undotree = {
-      enable = true;
-      settings = {
-        autoOpenDiff = true;
-        focusOnToggle = true;
-      };
+  plugins.undotree = {
+    enable = true;
+    settings = {
+      autoOpenDiff = true;
+      focusOnToggle = true;
     };
-    comment.enable = true;
-    wakatime.enable = true;
-    which-key.enable = true;
   };
 
   keymaps = [

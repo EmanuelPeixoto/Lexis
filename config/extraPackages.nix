@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
   extraPackages = with pkgs; [
-    ripgrep   # Telescope
+    fd        # Telescope find_files
+    fzf       # Telescope fzf-native
+    ripgrep   # Telescope live_grep
   ];
 }

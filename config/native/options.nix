@@ -2,7 +2,10 @@
   config.opts = {
     breakindent = true;
     clipboard = "unnamedplus";
+    completeopt = "menu,menuone,noselect";
+    conceallevel = 2;
     cursorline = true;
+    cursorlineopt = "number";
     expandtab = true;
     hlsearch = true;
     ignorecase = true;
@@ -15,13 +18,15 @@
     };
     mouse = "a";
     number = true;
+    pumblend = 10;
+    pumheight = 10;
     relativenumber = true;
     scrolloff = 10;
     shiftwidth = 2;
     showmode = false;
     signcolumn = "yes";
     smartcase = true;
-    softtabstop = 2;
+    softtabstop = -1;
     splitbelow = true;
     splitright = true;
     tabstop = 2;

@@ -2,14 +2,20 @@
   imports = [
     ./auto-pairs.nix
     ./codesnap.nix
+    ./colorizer.nix
+    ./dap.nix
     ./diffview.nix
+    ./fidget.nix
     ./flash.nix
     ./gitsigns.nix
+    ./grug-far.nix
     ./indent-blankline.nix
+    ./misc.nix
     ./nohlsearch.nix
     ./render-markdown.nix
     ./telescope.nix
     ./todo.nix
+    ./ufo.nix
     ./undotree.nix
     ./vimtex.nix
     ./wilder.nix
