@@ -3,6 +3,7 @@
   plugins.nvim-ufo = {
     enable = true;
     settings = {
+      open_fold_hl_timeout = 0;
       provider_selector = lib.nixvim.mkRaw ''
         function(bufnr, filetype, buftype)
           return { 'treesitter', 'indent' }
@@ -36,6 +37,18 @@
       key = "zp";
       action = "<cmd>lua require('ufo').peekFoldedLinesUnderCursor()<CR>";
       options.desc = "Peek fold";
+    }
+    {
+      mode = "n";
+      key = "zc";
+      action = "zc";
+      options.desc = "Close fold";
+    }
+    {
+      mode = "n";
+      key = "zo";
+      action = "zo";
+      options.desc = "Open fold";
     }
   ];
 }

@@ -7,6 +7,7 @@
     cursorline = true;
     cursorlineopt = "number";
     expandtab = true;
+    foldlevelstart = 99;
     hlsearch = true;
     ignorecase = true;
     inccommand = "split";
