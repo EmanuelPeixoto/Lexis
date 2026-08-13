@@ -132,7 +132,7 @@ Add `nixvim` as an input, import the Lexis base config, and enable only the LSP 
         modules = [
           {
             home.packages = [
-              (nixvim.legacyPackages.${system}.makeNixvimWithModule {
+              (nixvim.legacyPackages.${pkgs.stdenv.hostPlatform.system}.makeNixvimWithModule {
                 inherit pkgs;
                 module = {
                   imports = [ (import (lexis + "/config")) ];
@@ -165,7 +165,7 @@ For maximum control, import only the specific config files you want:
 ```nix
 {
   home.packages = [
-    (nixvim.legacyPackages.${system}.makeNixvimWithModule {
+    (nixvim.legacyPackages.${pkgs.stdenv.hostPlatform.system}.makeNixvimWithModule {
       inherit pkgs;
       module = {
         imports = [
