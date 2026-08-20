@@ -3,6 +3,7 @@
   plugins = {
     conform-nvim = {
       enable = true;
+      autoInstall.enable = true;
       settings = {
         formatters_by_ft = {
           go = [ "gofmt" "goimports" ];
@@ -10,6 +11,10 @@
           markdown = [ "markdownlint" ];
           sh = [ "shellharden" "shfmt" ];
           bash = [ "shellharden" "shfmt" ];
+          c = [ "clang_format" ];
+          cpp = [ "clang_format" ];
+          tex = [ "latexindent" ];
+          "*" = [ "trim_whitespace" "trim_newlines" ];
         };
         format_on_save = {
           timeout_ms = 500;
