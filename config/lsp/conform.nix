@@ -8,6 +8,7 @@
         formatters_by_ft = {
           go = [ "gofmt" "goimports" ];
           nix = [ "nixfmt" ];
+          json = [ "jq" ];
           markdown = [ "markdownlint" ];
           sh = [ "shellharden" "shfmt" ];
           bash = [ "shellharden" "shfmt" ];
